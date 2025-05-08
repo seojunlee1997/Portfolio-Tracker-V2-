@@ -69,3 +69,4 @@ for portfolio_id, info in portfolio_tickers.items():
     print(f"✅ Updated portfolio '{info['name']}' (ID: {portfolio_id}) with latest current prices.")
 
 print("\n🎉 All portfolios updated with current prices in Supabase!")
+#test commit 

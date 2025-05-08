@@ -3,7 +3,6 @@ name: Update Prices Every Minute
 on:
   schedule:
     - cron: '*/1 * * * *'  # every 1 minute
-  workflow_dispatch:  # allow manual trigger
 
 jobs:
   update:
@@ -26,5 +25,3 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python update_prices.py
-
-
